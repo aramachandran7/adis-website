@@ -1,0 +1,130 @@
+<!-- things to add, fix, do!
+sidebar detatched navbar right side
+shit to fix:
+  TOP button not working!
+  button width formatting
+  scroll button
+  If you can get fixed footer to work 
+    icon spacing
+    padding
+    Top Button
+    hover phone number links
+  my face? 
+opacity
+navbar that matches color?
+add in a loading spinwheel animation!
+'jumping descp. text - like cruise's website.'
+  text animations 
+ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Be+Vietnam|Quicksand|Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Adi's Website</title>
+  </head>
+  
+
+
+  
+  <div class="AboutMe" id="AboutMeimage">
+    <h2 class="center-text"> Adi Ramachandran </h2>
+    
+  </div>
+  <div class="textSection" id="AboutMetext">
+    <h3>about me</h3>
+    <p>
+      <b>Hi!</b> My name's Adi, and I'm an Engineering with a concentration in Computing (CS) Major at the Olin College of Engineering! I'm an entrepreneurial, motivated team player and love an engineering challenge any day! Currently, my interests lie in data science & web development! In the coming months, I’ll be attending a bunch of hackathons, and will be working on a bunch of cool software projects at Olin! Scroll down to check out more!
+    </p>
+    <!-- <a href="#IRI"><h2 class="scroll-button"> scroll down </h2></a> -->
+    <a href="resume.pdf" download="resume.pdf" class="buttonsimple">Download My Resume!</a>
+  </div>
+
+
+
+  <div class="Edual" id="Edualimage"></div>
+  <div class="textSection" id="Edualtext" >
+    <h3>'Edual' Olin catalyst project</h3>
+    <p>
+      Early in my time at Olin, I decided I wanted to work on a socially impactful entrepreneurial venture. Working with my co-founder, Eamon Ito-Fisher, we are developing an accessible online project based learning experience for engineering students. The software is specifically for students who don’t have access to a project-based engineering/CS curriculum, and who may not have confidence in their own creative-thinking or creative problem-solving abilities. We are currently looking at the Indian undergraduate engineering education system as our target market, and are conducting in-depth qualitative market research to better understand the market we are trying to reach. We are also official fellows for Olin Catalyst, the pre-seed entrepreneurship incubator on campus, and actively collaborating with their resources and mentorship opportunities. 
+    </p>
+    <!-- <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button> -->
+  </div>
+
+  <div class="Hemingway" id="Hemingwayimage" ></div>
+  <div class="textSection" id="Hemingwaytext">
+    <p>
+      Over this past summer, I co-founded a business venture in the college applications space, the Hemingway Summer Workshop. Through sixteen hours of instruction over the course of a month, my business partner Sarah Zhou and I were able to teach our students how to approach various types of college essays and how to create personalized roadmaps to break down the college application process. To set up the venture, we self-automated our email campaign, built a social media following, and composed a business strategy & pricing structure from the ground up. We’re looking forward to expanding next year!
+    </p>
+  </div>
+
+  <div class="Prominent" id="Prominentimage" ></div>
+  <div class="textSection" id="Prominenttext">
+    <p>
+      During June and July of 2019, I worked as an intern at a data science lab at the University of Illinois in Chicago. I wrote code primarily in Python & Java to build a machine learning pipeline that could better classify publicly available Time Series datasets. The pipeline featured special Process Mining algorithms, which are used to visualize and derive insights from event log data, to classify the data with a near State-of-the-Art accuracy. 
+    </p>
+  </div>
+
+  <div class="Robotics" id="Roboticsimage"></div> 
+  <div class="textSection" id="Roboticstext" >
+    <h3>Huskie Robotics</h3>
+    <p>My four years on the Huskie Robotics FRC team, Team 3061, were an absolute blast. As assembly lead, I oversaw the entire assembly subteam in the construction & integration of our 120 lb. FRC robot. This included the drivetrain, subsystems, bumpers, electrical board, etc. Additionally, I was in charge of coordinating our team prototyping efforts for the yearly competition. 
+    </p>
+  </div>
+
+  <div class="textSection2" id="Makerportfoliovideo">
+    <h3>maker portfolio - a video collection of my high school hardware projects </h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/amIAU5GJXsE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  
+
+  <div class="footer">
+    <h3>reach out here! :)</h3>
+    <div class="footer-pics-class">
+      <a href="aramachandran@Olin.edu"><img src="http://afronesiatours.co.za/wp-content/uploads/2018/02/e-mail-logo.png" class="footer-pic"></img></a>
+      
+      <a href="http://www.github.com/aramchandran7"><img src="https://image.flaticon.com/icons/png/512/25/25231.png" class="footer-pic"></img></a>
+
+      <a href="630-796-9467"><img src="https://image.flaticon.com/icons/png/512/25/25377.png" class="footer-pic"></img></a>
+      
+      <a href="http://www.linkedin.com/in/aditya-ramachandran"><img src="https://image.flaticon.com/icons/png/512/61/61109.png" class="footer-pic"></img></a>
+    </div>
+  </div>
+
+
+  <script>
+  //Get the button
+  var mybutton = document.getElementById("topBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+  <script>
+    function smoothScroll(target, duration){
+      var target = document.querySelector(target)
+
+    }
+  </script>
+  
+</html>
+
+
+
